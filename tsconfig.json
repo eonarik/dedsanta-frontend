@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es2015", "dom"],
+    "jsx": "preserve",
+    "module": "esnext",
+    "stripInternal": true,
+    "declaration": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "paths": {
+      "#/*": ["components/*"],
+      "$/*": ["apis/*"],
+      "@/*": ["./*"]
+    },
+    "inlineSources": true,
+    "sourceRoot": "/"
+  },
+  "filesGlob": ["**/*.ts", "**/*.tsx", "!node_modules/**"],
+  "include": [
+    "./*",
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "jest"
+  ]
+}
